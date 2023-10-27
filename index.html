@@ -60,13 +60,13 @@
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-trophy"></i> <span>Skills</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          <li><a href="#hero" target="_self" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" target="_self" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#skills" target="_self" class="nav-link scrollto"><i class="bx bx-trophy"></i> <span>Skills</span></a></li>
+          <li><a href="#resume" target="_self" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" target="_self" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#services" target="_self" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="#contact" target="_self" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -77,7 +77,7 @@
     <div class="hero-container" data-aos="fade-in">
       <h1>Shivani Sinha</h1>
       <p>I'm <span class="typed" data-typed-items="MERN Stack Developer, JavaScript Developer"></span></p>
-      <button><a href=""></a></button>
+      <button class="py-2 px-3 fs-4 border-0 rounded shadow-lg bg-light"><a href="https://drive.google.com/file/d/1XtNBZ2wW92AIrKKknDxWJ-Lcxn4S9fkJ/view?usp=sharing" target="_blank" id="download-resume-btn">Download Resume</a></button>
     </div>
   </section><!-- End Hero -->
 
@@ -112,7 +112,7 @@
                   <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>24 December 1999</span></li>
                   <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 8252551490</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bihar, India</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Uttar Pradesh, India</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
@@ -710,7 +710,7 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>Patna, Bihar, India</p>
+                <p>Noida, Uttar Pradesh, India</p>
               </div>
 
               <div class="email">
@@ -726,7 +726,7 @@
               </div>
 
               <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1198309.4368427583!2d85.2673001!3d25.0960743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399325a74f41ff9d%3A0xb99fcbf2d9877f6b!2sPatna%2C%20Bihar%2C%20India!5e0!3m2!1sen!2sus!4v1635220748272" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1198309.4368427583!2d85.2673001!3d25.0960743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399325a74f41ff9d%3A0xb99fcbf2d9877f6b!2sNoida%2C%20Uttar+Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1635220748272" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
 
           </div>
@@ -786,7 +786,7 @@
       };
 
       // Send the data to the server
-      fetch("http://localhost:3009/send-email", {
+      fetch("https://shivani-portfolio-be.vercel.app/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
