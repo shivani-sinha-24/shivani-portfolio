@@ -193,10 +193,10 @@
  * Portfolio details slider
  */
 new Swiper('.portfolio-details-slider', {
-  speed: 400,
+  speed: 500,
   loop: true,
   autoplay: {
-      delay: 5000,
+      delay: 3000,
       disableOnInteraction: false
   },
   pagination: {

@@ -1,15 +1,15 @@
 const projects = [
   {
     name:"Portfolio",    
-    image:"assets/img/portfolio/project-manager-homepage.png",   
+    image:"assets/img/portfolio/pf1.png",   
     filter:"filter-full",  
-    url:"/facebook-clone.html"  
+    url:"/portfolio-details.html"  
   },
   {
     name:"Project Manager",    
     image:"assets/img/portfolio/project-manager-homepage.png",   
     filter:"filter-mern",  
-    url:"/facebook-clone.html"  
+    url:"/project-manager.html"  
   },
   {
     name:"Admission Jockey Admin Panel",    
@@ -21,7 +21,7 @@ const projects = [
     name:"Admission Jockey Website",    
     image:"assets/img/portfolio/",   
     filter:"filter-mern",  
-    url:"/admission-jockey-website.html"  
+    url:"/admission-jockey.html"  
   },
   {
     name:"Facebook Clone",    
@@ -36,8 +36,8 @@ const projects = [
     url:"/blog-website.html"  
   },
   {
-    name:"Drag and Drop",    
-    image:"assets/img/portfolio/", 
+    name:"Drag and Drop List Item",    
+    image:"assets/img/portfolio/dnd1.png", 
     link:"filter-js",  
     filter:"filter-react",  
     url:"/drag-and-drop-list-items.html"  
@@ -52,7 +52,7 @@ const projects = [
     name:"React Website With Google Translate",    
     image:"assets/img/portfolio/react-website-with-google-translate.png",   
     filter:"filter-react",  
-    url:"/facebook-clone.html"  
+    url:"/web-with-google-transalte.html"  
   },
   {
     name:"Text Utils",    
@@ -64,7 +64,7 @@ const projects = [
     name:"React Pattern Recognizer",    
     image:"assets/img/portfolio/react-metrix.png",   
     filter:"filter-react",  
-    url:"/facebook-clone.html"  
+    url:"/react-pattern-recognizer.html"  
   },
   {
     name:"IMDB Clone",    
@@ -85,7 +85,7 @@ const projects = [
     url:"/calculator.html"  
   },
   {
-    name:"Car Insurance",    
+    name:"Car Insurance Quotation",    
     image:"assets/img/portfolio/car-insurance.png",   
     filter:"filter-js",  
     url:"/car-insurance.html"  
@@ -111,18 +111,18 @@ const projects = [
   {
     name:"Simon Game",    
     image:"assets/img/portfolio/simon-game.png",   
-    filter:"filter-js",  
+    filter:"filter-jquery",  
     url:"/simon-game.html"  
   },
   {
     name:"PostMaster",    
-    image:"assets/img/portfolio/simon-game.png",   
+    image:"assets/img/portfolio/pmc.png",   
     filter:"filter-js",  
     url:"/postmaster.html"  
   },
   {
     name:"College Library",    
-    image:"assets/img/portfolio/simon-game.png",   
+    image:"assets/img/portfolio/cl.png",   
     filter:"filter-js",  
     url:"/college-library.html"  
   },
@@ -130,6 +130,12 @@ const projects = [
     name:"Weekly Budget",    
     image:"assets/img/portfolio/weekly-budget.png",   
     filter:"filter-js",  
+    url:"/weekly-budget.html"  
+  },
+  {
+    name:"To Do List",    
+    image:"assets/img/portfolio/weekly-budget.png",   
+    filter:"filter-ejs",  
     url:"/weekly-budget.html"  
   },
 ]
@@ -155,7 +161,7 @@ const addProject = ()=>{
     i1.className="bx bx-plus"
     const a2 = document.createElement('a')
     a2.href=`${project.url}`
-    a2.target="_blank"
+    // a2.target="_blank"
     a2.title="More Details"      
     const i2 = document.createElement('i')
     i2.className="bx bx-link"

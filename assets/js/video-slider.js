@@ -4,7 +4,7 @@
 new Swiper('.portfolio-details-slider', {
     speed: 400,
     loop: true,
-    autoplay: false,
+    autoplay: true,
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
