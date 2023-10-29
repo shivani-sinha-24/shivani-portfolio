@@ -1,10 +1,3 @@
-/**
-* Template Name: iPortfolio
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -196,22 +189,37 @@
     selector: '.portfolio-lightbox'
   });
 
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
+/**
+ * Portfolio details slider
+ */
+new Swiper('.portfolio-details-slider', {
+  speed: 400,
+  loop: true,
+  autoplay: {
       delay: 5000,
       disableOnInteraction: false
-    },
-    pagination: {
+  },
+  pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
+  },  
+  navigation: {
+    nextEl: '.swiper-button-next', // Selector for the next arrow
+    prevEl: '.swiper-button-prev'  // Selector for the previous arrow
+  },
+  // Add the following options to pause on hover
+  on: {
+      init: function () {
+        this.el.addEventListener('mouseenter', function () {
+          this.autoplay.stop();
+        }.bind(this));
+        this.el.addEventListener('mouseleave', function () {
+          this.autoplay.start();
+        }.bind(this));
+      }
     }
-  });
+});
 
   /**
    * Testimonials slider
