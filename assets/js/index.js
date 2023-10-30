@@ -32,9 +32,15 @@ const projects = [
   },
   {
     name:"Blog Website",    
-    image:"assets/img/portfolio/",   
+    image:"assets/img/portfolio/bw1.png",   
     filter:"filter-mern",  
     url:"/blog-website.html"  
+  },
+  {
+    name:"React To Do List",    
+    image:"assets/img/portfolio/tdlr.png",   
+    filter:"filter-mern",  
+    url:"/react-to-do-list.html"  
   },
   {
     name:"Drag and Drop List Item",    
