@@ -1,3 +1,4 @@
+// Function to add projects in portfolio section
 const projects = [
   {
     name:"Portfolio",    
@@ -40,7 +41,7 @@ const projects = [
     image:"assets/img/portfolio/dnd1.png", 
     link:"filter-js",  
     filter:"filter-react",  
-    url:"/drag-and-drop-list-items.html"  
+    url:"/react-milti-list-drag-and-drop.html"  
   },
   {
     name:"NewsToday - Bharat",    
@@ -49,22 +50,22 @@ const projects = [
     url:"/news-bharat.html"  
   },
   {
-    name:"React Website With Google Translate",    
+    name:"Multilingual React Website",    
     image:"assets/img/portfolio/react-website-with-google-translate.png",   
     filter:"filter-react",  
-    url:"/web-with-google-transalte.html"  
+    url:"/multilingual-react-web.html"  
   },
   {
-    name:"Text Utils",    
+    name:"React Text Utils",    
     image:"assets/img/portfolio/React-Text-Utils.png",   
     filter:"filter-react",  
     url:"/text-utils.html"  
   },
   {
-    name:"React Pattern Recognizer",    
+    name:"React Color Grid",    
     image:"assets/img/portfolio/react-metrix.png",   
     filter:"filter-react",  
-    url:"/react-pattern-recognizer.html"  
+    url:"/react-color-grid.html"  
   },
   {
     name:"IMDB Clone",    
@@ -134,9 +135,9 @@ const projects = [
   },
   {
     name:"To Do List",    
-    image:"assets/img/portfolio/weekly-budget.png",   
+    image:"assets/img/portfolio/tdl-ejs1.png",   
     filter:"filter-ejs",  
-    url:"/weekly-budget.html"  
+    url:"/ejs-to-do-list.html"  
   },
 ]
 const addProject = ()=>{
@@ -177,6 +178,7 @@ const addProject = ()=>{
 };  
 addProject()
 
+// Function to add education getails in resume section
 const education = [
   {
     name:"MASTERS OF COMPUTER APPLICATION",
@@ -215,6 +217,7 @@ const addEdu = ()=>{
 }
 addEdu()
 
+// Function to add certifications in resume section
 const cetifications = [
   {
     name:"Full-Stack Web Development from GreatLearning",
@@ -271,6 +274,7 @@ const addCertification = ()=>{
 }
 addCertification()
 
+// Function to add role and responsibilities in resume's professfion experience section
 const roles = [
   `Proficient in full-stack web development, specializing in the MERN (MongoDB, Express.js, React, Node.js) stack.`,
   `Designed, developed, and maintained web applications, resulting in a 20% increase in user engagement and a 10% decrease in bounce rate.`,
@@ -294,6 +298,7 @@ const addRoles = ()=>{
 }
 addRoles()
 
+// Function to add skills
 const services = [
   {
     name:"Full-Stack Web Development",
@@ -371,19 +376,16 @@ const clearform = (type)=>{
   document.getElementById("message").value=" ";
 }
 function sendFormData() {
-  // Get form input values
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const subject = document.getElementById("subject").value;
   const message = document.getElementById("message").value;
-  // Create an object with the form data
   const formData = {
     name: name,
     email: email,
     subject: subject,
     message: message,
   };
-  // Send the data to the server
   fetch("https://shivani-portfolio-be.vercel.app/send-email", {
     method: "POST",
     headers: {
@@ -392,16 +394,13 @@ function sendFormData() {
     body:JSON.stringify(formData),
   })
     .then((data) => {
-      // Handle the response from the server if needed
       console.log('data :',data)
       if (data.status == 200) {
-        // Display a success message
         document.querySelector(".sent-message").style.display = "block";
         setTimeout(()=>{
           clearform(".sent-message")
         },2500)
       } else {
-        // Display an error message
         document.querySelector(".error-message").style.display = "block";
         setTimeout(()=>{
           clearform(".error-message")
@@ -409,7 +408,6 @@ function sendFormData() {
       }
     })
     .catch((error) => {
-      // Display an error message
       document.querySelector(".error-message").style.display = "block";
       setTimeout(()=>{
         clearform(".error-message")
