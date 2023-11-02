@@ -13,20 +13,14 @@ const projects = [
     url:"/project-manager.html"  
   },
   {
-    name:"Admission Jockey Admin Panel",    
-    image:"assets/img/portfolio/",   
-    filter:"filter-mern",  
-    url:"/admission-jockey-adminpanel.html"  
-  },
-  {
-    name:"Admission Jockey Website",    
-    image:"assets/img/portfolio/",   
+    name:"Admission Jockey Website with Admin Panel",    
+    image:"assets/img/portfolio/ajap.png",   
     filter:"filter-mern",  
     url:"/admission-jockey.html"  
   },
   {
     name:"Facebook Clone",    
-    image:"assets/img/portfolio/",   
+    image:"assets/img/portfolio/fb.png",   
     filter:"filter-mern",  
     url:"/facebook-clone.html"  
   },
@@ -39,7 +33,7 @@ const projects = [
   {
     name:"React To Do List",    
     image:"assets/img/portfolio/tdlr.png",   
-    filter:"filter-mern",  
+    filter:"filter-react",  
     url:"/react-to-do-list.html"  
   },
   {
@@ -400,7 +394,6 @@ function sendFormData() {
     body:JSON.stringify(formData),
   })
     .then((data) => {
-      console.log('data :',data)
       if (data.status == 200) {
         document.querySelector(".sent-message").style.display = "block";
         setTimeout(()=>{
