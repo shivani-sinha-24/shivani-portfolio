@@ -159,7 +159,7 @@ const addProject = ()=>{
     a1.setAttribute('data-gallery', 'portfolioGallery');
     a1.title=`${project.name}`
     const i1 = document.createElement('i')
-    i1.className="bx bx-plus"
+    i1.className="bx bx-zoom-in"
     const a2 = document.createElement('a')
     a2.href=`${project.url}`
     // a2.target="_blank"
